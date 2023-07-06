@@ -1,0 +1,35 @@
+0: BZJ 3 16
+1: BZJi 4 0
+8: BZJi 6 0
+30: CP 10 15
+31: CP 12 16
+32: NAND 12 20
+33: ADDi 12 1
+34: BZJi 24 0 
+40: CP 17 16 
+41: CP 23 10
+42: LT 23 17
+43: BZJ 19 23
+60: BZJ 21 10
+61: ADDi 18 1
+62: ADD 10 12
+63: CP 23 10
+64: ADD 23 12
+65: CP 17 12
+66: LT 17 23
+67: BZJ 24 17
+70: CP 18 20
+3: 70 // Address to copy result -1 if divisor is 0
+4: 30 // if divisor is not zero go to this addres
+5: 8 // to handle interruption
+10: 0 // Temp for dividend
+12: 0 // Temp for divisor
+15: 5 // Dividend
+16: 3 // Divisor
+17: 0 // Another temp for divisor
+18: 0 // Result
+19: 60 // holds start address where dividend>=divisor
+20: 4294967295 // max value to take 1's complement
+21: 68 // If full divison and after subtracting if temp divisor and temp dividend are equal. Finish program.
+23: 0 // Temp for hold dividend's next subtracted value
+24: 40 // Address where floor divison start operations
